@@ -4,6 +4,7 @@
 #
 
 obj-$(CONFIG_HID_LOGITECH_DJ)	+= hid-logitech-dj.o
+obj-$(CONFIG_HID_LOGITECH_HIDPP)	+= hid-logitech-hidpp.o
 
 all:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
